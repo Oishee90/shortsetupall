@@ -14,7 +14,7 @@ const AdminSidebar = () => {
   // console.log(user);
   const dropdownRef = useRef(null);
 
-  const isActiveDashboard = location.pathname === "/";
+  const isActiveDashboard = location.pathname === "/admin";
 
   const isActiveUser = location.pathname.startsWith("/adminuser");
   useEffect(() => {
@@ -47,7 +47,7 @@ const AdminSidebar = () => {
         {/* Menu Items */}
         <nav className="flex flex-col  text-[#364636] mt-9">
           <NavLink
-            to="/"
+            to="/dashboard/admin"
             className="flex items-center justify-between w-[280px]"
           >
             <div className="flex items-center justify-between w-[280px] font-semibold  p-2 ">
